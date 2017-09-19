@@ -1,0 +1,25 @@
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_32\mscorlib\2.0.0.0__b77a5c561934e089\mscorlib.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\9.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\9.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\9.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'E:\STUDY\WinForms\TuyenSinh\XetTuyen\bin\Debug\XetTuyen.vshost.exe', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml.Linq\3.5.0.0__b77a5c561934e089\System.Xml.Linq.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Data.DataSetExtensions\3.5.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Deployment\2.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+The thread 0x1ac has exited with code 0 (0x0).
+The thread 0x1c40 has exited with code 0 (0x0).
+'XetTuyen.vshost.exe' (Managed): Loaded 'E:\STUDY\WinForms\TuyenSinh\XetTuyen\bin\Debug\XetTuyen.exe', Symbols loaded.
+'XetTuyen.vshost.exe' (Managed): Loaded 'E:\STUDY\WinForms\TuyenSinh\XetTuyen\bin\Debug\PDSACryptography.dll'
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_32\System.Transactions\2.0.0.0__b77a5c561934e089\System.Transactions.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'C:\Windows\assembly\GAC_32\System.EnterpriseServices\2.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll', Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+'XetTuyen.vshost.exe' (Managed): Loaded 'E:\STUDY\WinForms\TuyenSinh\XetTuyen\bin\Debug\CDiese.dll'
+The thread 0xbc0 has exited with code 0 (0x0).
+The thread 0x1d08 has exited with code 0 (0x0).
+The program '[944] XetTuyen.vshost.exe: Managed' has exited with code 0 (0x0).

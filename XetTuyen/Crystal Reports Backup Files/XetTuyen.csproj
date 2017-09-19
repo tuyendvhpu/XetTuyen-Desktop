@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C056647D-CE45-47A6-A0D8-9E329077499E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XetTuyen</RootNamespace>
+    <AssemblyName>XetTuyen</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>false</GenerateManifests>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CDiese, Version=1.0.2861.20828, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ControlLibrary, Version=1.0.1189.26771, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\ControlLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CustomizeControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Eyefinder, Version=1.0.4.2, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Eyefinder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="navisight, Version=1.0.0.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\navisight.dll</HintPath>
+    </Reference>
+    <Reference Include="OutlookBar, Version=0.9.4.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\OutlookBar.dll</HintPath>
+    </Reference>
+    <Reference Include="PDSACryptography, Version=1.0.1368.15332, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\PDSACryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="SandBar, Version=1.1.1.0, Culture=neutral, PublicKeyToken=75b7ec17dd7c14c3">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\SandBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Shorty.Windows.Forms, Version=0.1.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\Shorty.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlertForm.designer.cs">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLogic\Audid.cs" />
+    <Compile Include="BusinessLogic\Authorizations.cs" />
+    <Compile Include="BusinessLogic\CongThuc.cs" />
+    <Compile Include="BusinessLogic\ThongTinXetTuyen.cs" />
+    <Compile Include="BusinessLogic\DieuKienc.cs" />
+    <Compile Include="BusinessLogic\DanToc.cs" />
+    <Compile Include="BusinessLogic\KhoiMon.cs" />
+    <Compile Include="BusinessLogic\Modules.cs" />
+    <Compile Include="BusinessLogic\Menu.cs" />
+    <Compile Include="BusinessLogic\GroupAuthorization.cs" />
+    <Compile Include="BusinessLogic\MenuGroup.cs" />
+    <Compile Include="BusinessLogic\GroupUser.cs" />
+    <Compile Include="BusinessLogic\Groups.cs" />
+    <Compile Include="BusinessLogic\DiemXetTuyen.cs" />
+    <Compile Include="BusinessLogic\DoiTuongUT.cs" />
+    <Compile Include="BusinessLogic\DotXetTuyen.cs" />
+    <Compile Include="BusinessLogic\HoSo.cs" />
+    <Compile Include="BusinessLogic\Huyen.cs" />
+    <Compile Include="BusinessLogic\KhoiThi.cs" />
+    <Compile Include="BusinessLogic\KhuVuc.cs" />
+    <Compile Include="BusinessLogic\MonXT.cs" />
+    <Compile Include="BusinessLogic\Nganh.cs" />
+    <Compile Include="BusinessLogic\NganhXetTuyen.cs" />
+    <Compile Include="BusinessLogic\NhanVien.cs" />
+    <Compile Include="BusinessLogic\NhomNganh.cs" />
+    <Compile Include="BusinessLogic\NhomUT.cs" />
+    <Compile Include="BusinessLogic\Tinh.cs" />
+    <Compile Include="BusinessLogic\TruongDH.cs" />
+    <Compile Include="BusinessLogic\TruongPT.cs" />
+    <Compile Include="BusinessLogic\Users.cs" />
+    <Compile Include="BusinessService\AudidService.cs" />
+    <Compile Include="BusinessService\AuthorizationsService.cs" />
+    <Compile Include="BusinessService\ThongTinXetTuyenService.cs" />
+    <Compile Include="BusinessService\DieuKienService.cs" />
+    <Compile Include="BusinessService\DanTocService.cs" />
+    <Compile Include="BusinessService\KhoiMonService.cs" />
+    <Compile Include="BusinessService\SecurityManager.cs" />
+    <Compile Include="BusinessService\GroupAuthorizationService.cs" />
+    <Compile Include="BusinessService\ModuleService.cs" />
+    <Compile Include="BusinessService\MenuGroupService.cs" />
+    <Compile Include="BusinessService\MenuService.cs" />
+    <Compile Include="BusinessService\GroupUserService.cs" />
+    <Compile Include="BusinessService\GroupsService.cs" />
+    <Compile Include="Common\ApplicationConfig.cs" />
+    <Compile Include="Common\AuthorizationAttribute.cs" />
+    <Compile Include="Common\CheckedListBoxItem.cs" />
+    <Compile Include="Common\ParamasterConfig.cs" />
+    <Compile Include="Common\FormName.cs" />
+    <Compile Include="Common\MethodBrowsableAttribute.cs" />
+    <Compile Include="Common\clsCommon.cs" />
+    <Compile Include="Common\MethodDescriptionAttribute.cs" />
+    <Compile Include="Common\ModuleType.cs" />
+    <Compile Include="Common\CompanyConfig.cs" />
+    <Compile Include="BusinessService\CongThucService.cs" />
+    <Compile Include="frmTTXetTuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTTXetTuyen.designer.cs">
+      <DependentUpon>frmTTXetTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXetTuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXetTuyen.designer.cs">
+      <DependentUpon>frmXetTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDieuKien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDieuKien.designer.cs">
+      <DependentUpon>frmDieuKien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistory.designer.cs">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNganhXT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNganhXT.designer.cs">
+      <DependentUpon>frmNganhXT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInGiayBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInGiayBao.designer.cs">
+      <DependentUpon>frmInGiayBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dsTuyenSinh.cs">
+      <DependentUpon>dsTuyenSinh.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsTuyenSinh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsTuyenSinh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiemTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiemTB.designer.cs">
+      <DependentUpon>frmDiemTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCongThuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCongThuc.designer.cs">
+      <DependentUpon>frmCongThuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiemXetTuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiemXetTuyen.designer.cs">
+      <DependentUpon>frmDiemXetTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoSo.designer.cs">
+      <DependentUpon>frmHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\DbAccess.cs" />
+    <Compile Include="BusinessService\UsersService.cs" />
+    <Compile Include="BusinessService\DiemXetTuyenService.cs" />
+    <Compile Include="BusinessService\DoiTuongUTService.cs" />
+    <Compile Include="BusinessService\DotXetTuyenService.cs" />
+    <Compile Include="BusinessService\HoSoService.cs" />
+    <Compile Include="BusinessService\HuyenService.cs" />
+    <Compile Include="BusinessService\KhoiThiService.cs" />
+    <Compile Include="BusinessService\KhuVucService.cs" />
+    <Compile Include="BusinessService\MonXTService.cs" />
+    <Compile Include="BusinessService\NganhService.cs" />
+    <Compile Include="BusinessService\NganhXetTuyenService.cs" />
+    <Compile Include="BusinessService\NhanVienService.cs" />
+    <Compile Include="BusinessService\NhomNganhService.cs" />
+    <Compile Include="BusinessService\NhomUTService.cs" />
+    <Compile Include="BusinessService\TinhService.cs" />
+    <Compile Include="BusinessService\TruongDHService.cs" />
+    <Compile Include="BusinessService\TruongPTService.cs" />
+    <Compile Include="Common\UserInformation.cs" />
+    <Compile Include="Common\Utilities.cs" />
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCongTy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFreview.designer.cs">
+      <DependentUpon>frmFreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDotXetTuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDotXetTuyen.designer.cs">
+      <DependentUpon>frmDotXetTuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnecting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AlertForm.resx">
+      <DependentUpon>AlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTTXetTuyen.resx">
+      <DependentUpon>frmTTXetTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXetTuyen.resx">
+      <DependentUpon>frmXetTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDieuKien.resx">
+      <DependentUpon>frmDieuKien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistory.resx">
+      <DependentUpon>frmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNganhXT.resx">
+      <DependentUpon>frmNganhXT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInGiayBao.resx">
+      <DependentUpon>frmInGiayBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiemTB.resx">
+      <DependentUpon>frmDiemTB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCongThuc.resx">
+      <DependentUpon>frmCongThuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiemXetTuyen.resx">
+      <DependentUpon>frmDiemXetTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoSo.resx">
+      <DependentUpon>frmHoSo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCongTy.resx">
+      <DependentUpon>frmCongTy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFreview.resx">
+      <DependentUpon>frmFreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDotXetTuyen.resx">
+      <DependentUpon>frmDotXetTuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnecting.resx">
+      <DependentUpon>frmConnecting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGiayBaoDiemCD3chung.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGiayBaoDiemCD3chung.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGiayBaoDiem3chung.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGiayBaoDiem3chung.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGiayBaoDiemCD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGiayBaoDiemCD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGiayBaoDiem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGiayBaoDiem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGiayBaoCD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGiayBaoCD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rptGiayBao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptGiayBao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmAdminMode.resx">
+      <DependentUpon>frmAdminMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmAuthorization.resx">
+      <DependentUpon>frmAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmGroup.resx">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucDataButton.resx">
+      <DependentUpon>ucDataButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\rptGiayBaoDiemCD3chung.cs">
+      <DependentUpon>rptGiayBaoDiemCD3chung.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\rptGiayBaoDiem3chung.cs">
+      <DependentUpon>rptGiayBaoDiem3chung.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\rptGiayBaoDiemCD.cs">
+      <DependentUpon>rptGiayBaoDiemCD.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\rptGiayBaoDiem.cs">
+      <DependentUpon>rptGiayBaoDiem.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\rptGiayBaoCD.cs">
+      <DependentUpon>rptGiayBaoCD.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Report\rptGiayBao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptGiayBao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Security\frmAdminMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmAdminMode.designer.cs">
+      <DependentUpon>frmAdminMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmAuthorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmAuthorization.designer.cs">
+      <DependentUpon>frmAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmBase.designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmGroup.designer.cs">
+      <DependentUpon>frmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDataButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDataButton.designer.cs">
+      <DependentUpon>ucDataButton.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background_Groupbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete16161.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Excel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_shutDown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Module.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProgramOff.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveData.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectedModule.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update1616.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_shutDown1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multilingual.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics-icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dsTuyenSinh.xsc">
+      <DependentUpon>dsTuyenSinh.xsd</DependentUpon>
+    </None>
+    <None Include="dsTuyenSinh.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsTuyenSinh.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="dsTuyenSinh.xss">
+      <DependentUpon>dsTuyenSinh.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Resources\img_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Process\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

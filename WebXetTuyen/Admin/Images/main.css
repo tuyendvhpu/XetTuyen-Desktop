@@ -1,0 +1,907 @@
+
+BODY
+{
+	background-color: #ffffff;
+	margin-bottom:5px;
+	margin-left:0px;
+	margin-top: 5px;
+	margin-right:0px;
+	
+}
+
+.input{
+	font-family:  Verdana, Geneva, sans-serif;
+	width: 150px;
+	height: 18px;
+	font-size: 12px;
+	
+}
+.gia
+{
+	color: Red;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.Error
+{
+	color: Red;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	  font-weight:bold;	
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text12{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+    
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.text12 a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight:bold;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text12 a:hover{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+}
+.text12b{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.text12b{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.text123b a:hover{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+	
+}
+.text13{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.text13 a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text13 a:hover{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text13b{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.text13b a:hover
+{
+	color: Orange;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+}
+.text13b a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+	
+}
+
+.text14{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.text14 a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text14 a:hover{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+}
+.text14b{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 5px 0px;
+	
+}
+.text14b a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text14b a:hover{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+	
+}
+.text15{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.text15 a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.text15b{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.text15b a{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.text15b a:hover{
+	color: #FFFFFF;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+	
+}
+.TieuDe12{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TieuDe12b{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TieuDe12b a{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.TieuDe12b a:hover{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline;
+}
+.TieuDe13{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TieuDe13b{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+.TieuDe14{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TieuDe14b{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TieuDe15{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TieuDe15b{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+.TieuDe20{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 20px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TieuDe20b{
+	color: #2958a8;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 20px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TenSanPham12{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TenSanPham12b{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TenSanPham12b a{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.TenSanPham12b a:hover{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+.TenSanPham13{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TenSanPham13b{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TenSanPham13b a{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.TenSanPham13b a:hover{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+.TenSanPham14{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TenSanPham14b{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TenSanPham14b a{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.TenSanPham14b a:hover{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+.TenSanPham15{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.TenSanPham15b{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.TenSanPham15b a{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.TenSanPham15b a:hover{
+	color: #fff0b4;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+.GoiThieu12{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	
+	padding: 0px 0px 0px 0px;
+}
+.GoiThieu12 a{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	text-decoration:none
+	padding: 0px 0px 0px 0px;
+}
+.GoiThieu12b a:hover{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+	
+}
+.GoiThieu12b {
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+	
+}
+.GoiThieu12b a:hover{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+	
+}
+.GoiThieu13{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.GoiThieu13b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+.GoiThieu14{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.GoiThieu14b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.GoiThieu15{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.GoiThieu15b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.HoTro12{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.HoTro12b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.HoTro12b a{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.HoTro12b a:hover{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+
+.HoTro13{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.HoTro13b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.HoTro13b a{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.HoTro13b a:hover{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+
+.HoTro14{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.HoTro14b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.HoTro14b a{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.HoTro14b a:hover{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+
+.HoTro15{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	padding: 0px 0px 0px 0px;
+}
+.HoTro15b{
+	color: #000000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+
+
+.footer12b{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 15px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+}
+
+.footer12{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	
+	padding: 0px 0px 0px 0px;
+}
+.footer12b{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+}
+.footer12b a{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 1px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.footer12b a:hover{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+}
+.footer13{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	
+	padding: 0px 0px 0px 0px;
+}.footer13b{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+}
+
+.footer13b a{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+}
+.footer13b a:hover{
+	color: #D1CD85;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+}
+.chitiet12{
+	color: #460000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 12px;	
+	line-height:17px;
+	
+	padding: 0px 0px 0px 0px;
+}.chitiet12b{
+	color: #460000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+}
+.chitiet13{
+	color: #460000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	
+	padding: 0px 0px 0px 0px;
+}
+.chitiet13b{
+	color: #460000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+}
+.chitiet13b a{
+	color: #460000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+}
+.chitiet13b a:hover{
+	color: #460000;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration: underline;
+}
+.MeNuHoTro13b{
+	color: #2C2F00;
+	font-family:  TimesVerdana, Geneva, sans-serif
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.MeNuHoTro13b a{
+	color: #2C2F00;
+	font-family: Verdana, Geneva, sans-serif
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.MeNuHoTro13b a:hover{
+	color: #2C2F00;
+	font-family:  Verdana, Geneva, sans-serif
+    font-size: 13px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+MeNuHoTro14b{
+	color: #2C2F00;
+	font-family:  Verdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	
+}
+.MeNuHoTro14b a{
+	color: #2C2F00;
+	font-family:  erdana, Geneva, sans-serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:none
+	
+}
+.MeNuHoTro14b a:hover{
+	color: #2C2F00;
+	font-family:  Times New Roman, Times, serif;
+    font-size: 14px;	
+	line-height:17px;
+	font-weight:bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration:underline
+	
+}
+text13b a:active
+{
+	color: Orange;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 17px;
+	font-weight: bold;
+	padding: 0px 0px 0px 0px;
+	text-decoration: none;
+}

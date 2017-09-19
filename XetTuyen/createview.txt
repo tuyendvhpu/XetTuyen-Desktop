@@ -1,0 +1,19 @@
+SELECT     dbo.t_HoSo.IDHS, dbo.t_HoSo.SoCMTND, dbo.t_HoSo.HoTen, dbo.t_HoSo.NgaySinh, dbo.t_HoSo.GioiTinh, dbo.t_HoSo.HoKhau, dbo.t_HoSo.DiaChi, 
+                      dbo.t_HoSo.DienThoai, dbo.t_HoSo.Email, dbo.t_HoSo.MaTinh, dbo.t_HoSo.MaHuyen, dbo.t_HoSo.MaDT, dbo.t_HoSo.Lop10, dbo.t_HoSo.Lop10MaTinh, 
+                      dbo.t_HoSo.Lop10MaTruong, dbo.t_HoSo.Lop11, dbo.t_HoSo.Lop11MaTinh, dbo.t_HoSo.Lop11MaTruong, dbo.t_HoSo.Lop12, dbo.t_HoSo.Lop12MaTinh, 
+                      dbo.t_HoSo.Lop12MaTruong, dbo.t_HoSo.MaKV, dbo.t_HoSo.TruongDT, dbo.t_HoSo.KhoiDT, dbo.t_HoSo.DanToc, dbo.t_HoSo.HanhKiem, dbo.t_HoSo.HocBa, 
+                      dbo.t_HoSo.LoaiHocBa, dbo.t_HoSo.NamTotNghiep, dbo.t_HoSo.GiayTotNghiep, dbo.t_HoSo.NgayNhap, dbo.t_HoSo.NguoiNhap, dbo.t_HoSo.NgaySua, 
+                      dbo.t_HoSo.NguoiSua, dbo.t_HoSo.SoBaoDanh, dbo.t_HoSo.DangXetTuyen, dbo.t_HoSo.Nam, dbo.t_HoSo.NopLePhi, dbo.t_HoSo.LienThong, dbo.t_HoSo.TotNghiep, 
+                      dbo.t_HoSo.Online, dbo.t_HoSo.HeXetTuyen, dbo.t_HoSo.HinhThuc, dbo.t_HoSo.Buoc, dbo.t_HoSo.KetQua, dbo.t_NganhXetTuyen.IDNganh, 
+                      dbo.t_NganhXetTuyen.MaNganh, dbo.t_NganhXetTuyen.MaKhoi, dbo.t_NganhXetTuyen.MaDot, dbo.t_NhomNganh.TenNganh AS NhomNganh, dbo.t_Nganh.TenNganh, 
+                      dbo.t_NganhXetTuyen.DiemTB, dbo.t_DotXetTuyen.TenDot, dbo.t_DoiTuongUT.DiemUT, dbo.t_KhuVuc.DienUT
+FROM         dbo.t_NganhXetTuyen INNER JOIN
+                      dbo.t_Nganh ON dbo.t_NganhXetTuyen.IDNganh = dbo.t_Nganh.IDNganh AND dbo.t_NganhXetTuyen.Nam = dbo.t_Nganh.Nam AND 
+                      dbo.t_NganhXetTuyen.MaKhoi = dbo.t_Nganh.MaKhoi INNER JOIN
+                      dbo.t_NhomNganh ON dbo.t_NganhXetTuyen.MaNganh = dbo.t_NhomNganh.MaNganh INNER JOIN
+                      dbo.t_HoSo ON dbo.t_NganhXetTuyen.IDHS = dbo.t_HoSo.IDHS INNER JOIN
+                      dbo.t_DotXetTuyen ON dbo.t_NganhXetTuyen.MaDot = dbo.t_DotXetTuyen.MaDot AND dbo.t_NganhXetTuyen.Nam = dbo.t_DotXetTuyen.Nam INNER JOIN
+                      dbo.t_DoiTuongUT ON dbo.t_HoSo.MaDT = dbo.t_DoiTuongUT.MaDT INNER JOIN
+                      dbo.t_KhuVuc ON dbo.t_HoSo.MaKV = dbo.t_KhuVuc.MaKV
+v_HoSo_NganhXetTuyen
+

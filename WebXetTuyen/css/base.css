@@ -1,0 +1,2013 @@
+﻿@charset "utf-8";
+@font-face {
+	font-family: 'UTM Alter Gothic';
+	src: url('font/UTM%20Alter%20Gothic.ttf');
+	
+}
+
+@font-face {
+	font-family: 'UTM Aquarelle';
+	src: url('font/UTM%20Aquarelle.ttf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-Bold';
+	
+	src: url('font/MyriadPro-Bold.otf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-BoldCond';
+	src: url('font/MyriadPro-BoldCond.otf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-BoldCondIt';
+	src: url('font/MyriadPro-BoldCondIt.otf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-BoldIt.otf';
+	src: url('font/MyriadPro-BoldIt.otf.otf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-It';
+	src: url('font/MyriadPro-It.otf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('font/MyriadPro-Regular.otf');
+	
+}
+@font-face {
+	font-family: 'MyriadPro-Semibold';
+	src: url('font/MyriadPro-Semibold.otf');
+	
+}
+
+@font-face {
+	font-family: 'MyriadPro-SemiboldIt';
+	src: url('font/MyriadPro-SemiboldIt.otf');
+	
+}
+
+
+
+
+/* Table Of Contents
+----------------------------------------
+
+# General Elements
+# body
+# layout
+# header
+# gNav
+# pageBody
+# content
+# sidebar
+# footer
+# clearfix
+# common classes
+
+----------------------------------------*/
+
+
+
+
+/* # General Elements
+---------------------------------------------------------------------------- */
+
+
+
+
+a    { color: black; text-decoration: none; outline: none; }
+a:hover   { color: #FF6600; }
+
+p.custom_font{
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+}
+/* # body
+---------------------------------------------------------------------------- */
+
+body {
+	color: #000;
+	font-size: 75%;
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+	line-height: 1.5;
+	margin:0;
+	padding:0;
+	height:100%;
+
+	
+}
+
+
+/* # layout
+---------------------------------------------------------------------------- */
+
+div#wrapper 
+{
+	
+	min-height:100%;
+	margin:0;
+	padding:0;
+	position:relative;
+    background:#055e7f;
+	padding-bottom:89px;
+    }
+
+div#layout {
+	margin: 0 auto;
+	width: 1000px;
+	position:relative;
+	padding:0 0 0 0;
+	padding-top:5px;
+	min-height:100%
+	/*background:aqua; */
+}
+
+div#center{
+	background:#e4f2fc;
+	width:780px;
+	position:relative;
+	margin:0 120px 0 100px;
+	border-radius:10px;
+	min-height:100%;
+}
+
+
+div#content {
+background:#ffffff;
+width:730px;
+margin: 0px 25px 0  25px;
+padding:10px 0 0 0;
+min-height:580px;
+vertical-align:top;
+
+}
+
+div#linebgheader {
+clear:both;
+background:url('../images/bglineheader.png')  repeat-x ;
+width:730px;
+height:15px;
+margin: 0;
+padding:0;
+
+
+}
+div#linetite {
+clear:both;
+width:730px;
+height:35px;
+margin: 0;
+padding:0;
+background-color:#468f42;
+text-align:center;
+line-height:35px;
+color:#FFFFFF;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:18px;
+}
+
+div#bglinetite {
+clear:both;
+width:730px;
+height:15px;
+margin: 0;
+padding:0;
+background:url('../images/linetite.png');
+
+}
+
+div#TuyenSinh
+{
+font-family: "UTM Alter Gothic"; /* no .ttf */
+clear:both;
+width:470px;
+min-height:100%;
+margin: 0;
+padding:0;
+padding-bottom:80px;
+margin-left:130px;
+margin-top:15px;
+background:#FFFFFF;
+}
+div#TuyenSinh p#TuyenSinh{
+width:470px;
+height:25px;
+background:#fdeb00;
+line-height:25px;
+text-align:center;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+color:#6d674a;
+font-size:17px;
+}
+
+div#TuyenSinh p#Dot{
+width:412px;	
+padding-left:58px;
+padding-top:10px;
+background:#ffffff;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+color:#8a8989;
+font-weight:normal;
+font-size:16px;
+}
+div#TuyenSinh ul#Dot{
+width:412px;	
+padding-left:58px;
+background:#ffffff;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+color:#8a8989;
+font-weight:normal;
+font-size:14px;
+display:list-item;
+} 
+div#TuyenSinh li.Dot{
+list-style:disc;
+}
+
+/* # header
+---------------------------------------------------------------------------- */
+#header {
+clear:both;
+height:56px;
+border-radius:10px;
+background:#3d85b5;
+
+
+}
+#tableheader {
+	height:56px;
+	width:730px;
+}
+
+#tableheader tr td#col6 {
+	width:50px;
+	vertical-align:top;
+	text-align:right;
+    padding-top:5px;
+	padding-left:60px;
+    }
+#tableheader tr td#col2 {
+	width:335px;
+	vertical-align:top;
+    padding-top:5px;
+	padding-left:10px;
+
+}
+#tableheader tr td#col3 {
+	width:100px;
+	vertical-align:top;
+	   padding-top:15px;
+
+}
+#tableheader tr td#col4 {
+     	vertical-align:top;
+        padding-top:10px;	
+		width:165px;
+		padding-left:15px;
+		
+}
+
+h1#h1namehome {
+    font-family: "UTM Alter Gothic"; /* no .ttf */
+    color:white;
+    font-size:22px;
+    line-height: 45px;
+   
+}
+
+h1#h1name {
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+    color:white;
+    font-size:22px;
+    line-height:28px;
+}
+span.spanlevel {
+	color:#f9ed33;
+}
+a.alevel {
+	color:#f9ed33;
+}
+div .ThongBaoButton 
+{
+	clear:both;
+	position:relative;
+	float:left;
+	width:100%; 
+	text-align:center;
+	z-index:10;
+	padding:0;
+	margin:10px 0 0 0;
+	}
+.searchtxt {
+	background:#ffffff;
+	width:100px;
+	height:15px;
+	border:0;
+	vertical-align:top;
+	color:white; 
+    padding:2px 5px ;
+    border-radius:10px;
+	font-size:11px;
+	}
+
+	 
+   ul#ulshare
+   {
+   		display:list-item;
+		list-style:none;
+   	}    
+	ul#ulshare li {
+	list-style:none;
+	width:165px;
+}
+ul#ulsharelink {
+	display:block;
+	list-style:none;
+	width:165px;
+	height:20px;
+}
+ul#ulsharelink li {
+display:inline;
+}
+ul#ulsharelink li a {
+	float:left;
+	padding-left:6px;
+}
+a.iconface {
+	background:url('../images/index/facebook_black.png') no-repeat;
+	width:15px;
+	height:15px;
+	}
+a.iconface:hover {
+     background:url('../images/index/facebook.png') no-repeat;
+}
+a.icontiwter {
+	background:url('../images/index/twitter_black.png') no-repeat;
+	width:15px;
+	height:15px;
+}
+a.icontiwter:hover {
+     background:url('../images/index/twitter.png') no-repeat;
+}
+
+a.icongoogle{
+	background:url('../images/index/google_black.png') no-repeat;
+	width:15px;
+	height:15px;
+}
+a.icongoogle:hover {
+     background:url('../images/index/google.png') no-repeat;
+}
+
+a.iconfeed{
+	background:url('../images/index/feed_black.png') no-repeat;
+	width:15px;
+	height:15px;
+}
+a.iconfeed:hover {
+     background:url('../images/index/feed.png') no-repeat;
+}
+a.iconyoutobe{
+	background:url('../images/index/youtube_black.png') no-repeat;
+	width:15px;
+	height:15px;
+}
+a.iconyoutobe:hover {
+     background:url('../images/index/youtube.png') no-repeat;
+}
+a.sodoweb {
+     font-family: "UTM Alter Gothic"; /* no .ttf */
+    color:white;
+    font-size:11px;
+	font-weight:normal;
+	padding-left:0px;
+	padding-right:5px;
+}
+a.sodoweb:hover {
+
+    
+}
+
+a.iconyenglish{
+	background:url('../images/index/flagenglish.gif') no-repeat;
+	width:19px;
+	height:15px;
+}
+a.iconyenglish:hover {
+     background:url('../images/index/flagenglish.gif') no-repeat;
+}
+
+a.iconyviet{
+	background:url('../images/index/viet_nam.gif') no-repeat;
+	width:22px;
+	height:15px;
+}
+a.iconyviet:hover {
+     background:url('../images/index/viet_nam.gif') no-repeat;
+}
+/*---begin divnavi ---*/
+div#divnavi {
+	margin-top:5px;
+	background-color:#16456f;
+	clear:both;
+	height:30px;
+}
+    
+/* # gNav
+---------------------------------------------------------------------------- */
+ul#ulnavi {
+	display:block;
+	list-style:none;
+	padding-left:5px;
+	
+}
+
+ul#ulnavi li
+{
+	display:inline;
+	height:30px;
+	line-height:30px;
+	
+	
+}
+ul#ulnavi li a{
+	float:left;
+	color:white;font-size:13px;font-family: "UTM Alter Gothic"; /* no .ttf */
+	/**-- border-left: 2px solid #3b6b91; ---*/
+	padding:0px 23px 0px 23px;
+}
+ul#ulnavi li a.aend 
+{
+    border-right: 2px solid #3b6b91;
+}
+ul#ulnavi li a.afist 
+{
+    padding:0px 30px 0px 65px;
+}
+
+ul#ulnavi li a:hover {
+
+	text-decoration:underline;
+}
+
+
+a.amemnuactive {
+	text-decoration:underline;
+
+}
+
+/*--- begin divcontentheadr ---*/
+div#contentheader {
+	clear:both;
+}
+
+table#tablecontentheader {
+	width:730px;
+	background-color:#16456f;
+	height:168px;
+	
+}
+table#tablecontentheader tr td#topleft{
+	width:58px;
+	height:108px;
+	
+	
+	
+}
+div#lefttable {
+	width:60px;
+	background-color:#16456f;
+	height:108px;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	vertical-align:top;
+	top:0;
+	
+}
+div#lefttablebotton {
+	width:60px;
+	background-color:#ffffff;
+	height:60px;
+	margin:0;
+	padding:0;
+	position:relative;
+	float:left;
+	top:0;
+	vertical-align:top;
+	
+}
+div#righttable {
+	width:45px;
+	background-color:#16456f;
+	height:108px;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:0;
+	
+}
+div#righttablebotton {
+	width:45px;
+	background-color:#ffffff;
+	height:60px;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:0;
+	
+}
+div#tiletablecola2 {
+	width:210px;
+	background:url('../images/bgcol1_04.png') no-repeat;
+	background-color:#ffffff;
+	height:140px;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:0;
+	
+}
+div#tiletablecola2botton {
+	width:210px;
+	background:url('../images/bgcol1_2.png') no-repeat;
+	background-color:#ffffff;
+	height:20px;
+	float:left;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:0;
+	
+}
+table#tablecontentheader tr td#cola1{
+	width:415px;
+	height:168px;
+	text-align:right;
+	
+}
+table#tablecontentheader tr td#cola2{
+	vertical-align:top;
+	width:210px;
+	padding-top:8px;
+}
+
+div#newshot {
+	background:#FFFFFF;
+	width:415px;	
+	height:168px;
+
+}
+dl.ttob {
+	clear:both;
+	margin:5px 0px 0px 10px;
+	
+}
+dl.ttob a {
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+    color:white;
+    font-size:20px;
+
+}
+ a.dd {
+	padding-left:15px;
+}
+ a.dd:hover {
+
+	text-decoration:underline;
+
+}
+ul#ttob
+{
+clear:both;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+color:white;
+font-size:13px;
+padding-top:15px;
+display:list-item;
+list-style:none;
+width:210px;
+}
+li.tdob1
+{
+	background:url('../images/list_01.png') no-repeat;
+	list-style:none;
+	width:210px;
+	height:22px;
+}
+li.tdob2
+{
+	background:url('../images/list_02.png') no-repeat;
+	list-style:none;
+	width:210px;
+	height:22px;
+}
+li.tdob3
+{
+	background:url('../images/list_03.png') no-repeat;
+	list-style:none;
+	width:210px;
+	height:22px;
+}
+li.tdob4
+{
+	background:url('../images/list_04.png') no-repeat;
+	list-style:none;
+	width:210px;
+	height:22px;
+}
+li.tdob5
+{
+	background:url('../images/list_05.png') no-repeat;
+	list-style:none;
+	width:210px;
+	height:22px;
+}
+ul#ttob li a{
+	float:left;
+	color:white;font-size:13.3px;font-family: "UTM Alter Gothic"; /* no .ttf */
+	/**-- border-left: 2px solid #3b6b91; ---*/
+	padding:0 0 0 25px;
+}
+ul#ttob li a:hover{
+	text-decoration:underline;
+}
+/* # contentbody
+---------------------------------------------------------------------------- */
+
+div#contentbody{
+		clear: both;
+		background:#ffffff;
+		height:100%;
+      
+}
+
+div#contentbody table#tablecontentbody
+{
+width:100%;
+}
+
+div#contentbody table#tablecontentbody tr td
+{
+vertical-align:top;
+}
+
+
+div#thongtinve {
+	width:184px;
+}
+div#thongtinve a {
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+    font-size:20px;
+      color:white;
+}
+div#thongtinve a:hover {
+	text-decoration:underline;
+}
+div#thongtinve p {
+	margin-bottom:4px;
+}
+p.ptextheader {
+	background:url('../images/index/img_line.jpg') no-repeat;
+	background-position:left bottom;
+        font-family: "UTM Alter Gothic"; /* no .ttf */
+        font-size:19px;
+	color:#f15a29;
+	padding-bottom:3px;
+
+}
+
+.imgTHPT {
+	margin:0;
+	padding:0;
+	margin-left:130px;
+	margin-top:-2px;
+        width: 177px;
+        height: 64px;
+}
+
+
+.imgDH {
+	margin:0;
+	padding:0;
+	margin-left:35px;
+	margin-top:-2px;
+        width: 179px;
+        height: 64px;
+}
+.imgCapNhat {
+	
+	padding:0;
+	margin-left:34px;
+	margin-top:-53.5px;
+	width:42px;
+	height:54px;
+	vertical-align:text-top;
+}
+
+
+
+
+
+
+
+/* # contentbotton
+---------------------------------------------------------------------------- */
+#logobotton {
+	background:url('../images/bottonlogo.png');
+	width:780px;
+	position:absolute;
+	bottom:-42px;
+	left:100px;
+	height:203px;
+	margin: 0 auto;
+	z-index:2;
+    clear: both;
+
+}
+#contentbotton {
+	background:#055e7f;
+	width:100%;
+	position:absolute;
+	bottom:-46px;
+	left:0;
+	padding:0;
+	margin:0;
+    clear: both;
+
+}
+#tablefooter {
+	clear:both;
+     margin: 0 auto;
+	width: 730px;
+	padding:0;
+ 
+
+}
+
+#tablefooter tr td#co1f {
+	width:60%;
+	
+}
+#tablefooter tr td#col2f {
+	text-align:right;
+	padding-right:12px;	
+}
+p.diachi {
+		color:white;font-size:11px;font-family:Arial; /* no .ttf */
+		margin:10px 0px 5px 0px;
+              
+}
+
+p.sologon {
+	color:white;font-size:16px;font-family: "UTM Aquarelle"; /* no .ttf */
+
+}
+
+
+
+/* # cac buoc
+---------------------------------------------------------------------------- */
+
+div#cacbuoc {
+clear:both;
+width:655px;
+height:35px;
+margin:0 15px 0 15px;
+padding:0 0 0 45px;
+background-color:#008e9a;
+text-align:left;
+line-height:35px;
+color:#FFFFFF;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:18px;
+z-index:10;
+	
+}
+div#cacbuocnoidung{
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+position:relative;
+float:left;
+width:696px;
+margin:0 15px 0 15px;
+padding:0 ;
+background-color:#FFFFFF;
+text-align:left;
+color:#949495;
+border:#f7f7f6;
+border:solid;
+border-width:2px;
+border-top:none;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius:10px; 
+z-index:10px;
+}
+
+ul#ma{
+display:list-item;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+position:relative;
+text-align:right;
+float:right;
+width:690px;
+padding:5px 6px 0 0;
+margin:0;
+color:#949495;
+}
+div#cacbuocnoidung li#ma{
+list-style:none;
+}
+
+p#titebuoc
+{
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:18px;
+color:#007883;
+text-align:center;
+}
+div#setp
+{
+z-index:10;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+clear:both;
+position:relative;
+float:left;
+width:696px;
+padding:5px 75px 0 75px;
+margin:0;
+}
+
+
+ul#stepnum {
+display:block;
+list-style:none;
+
+}
+
+ul#stepnum li {
+
+list-style:none;
+}
+ul#stepnum li a {
+	float:left;
+	
+}
+
+a.stepnumchoice {
+	background:url('../images/stepbgn.png') no-repeat;
+	width:38px;
+	height:35px;
+	color:#6a6a6b;
+	font-size:14px;
+	text-align:center;
+	line-height:38px;
+}
+
+a.stepnumchoice:hover {
+     background:url('../images/stepbg.png') no-repeat;
+	 color:#FFFFFF;
+}
+ a.stepnumchoice:active {
+	text-decoration:none;
+	background:url('../images/stepbg.png');
+	color:#FFFFFF;
+}
+
+ a.stepnumchoiceac {
+	text-decoration:none;
+	background:url('../images/stepbg.png');
+	color:#FFFFFF;
+	width:38px;
+	height:35px;
+	font-size:14px;
+	line-height:38px;
+	text-align:center;
+}
+div#num{
+position:relative;
+float:left;
+width:38px;
+height:35px;
+}
+div#numfist{
+position:relative;
+float:left;
+width:38px;
+height:35px;
+margin-left:15px;
+}
+
+div#line{
+	background:url('../images/linestep.png') repeat-x;
+	line-height:5px;
+	position:relative;
+	float:left;	
+	height:5px;
+	width:190px;
+	margin-top:15px;
+	
+}
+ul#setptext
+{
+position:relative;
+clear:both;
+float:left;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:13px;
+display:block;
+list-style:none;
+width:100%;
+padding:5px 0 0 0px;
+margin:0;
+z-index:10px;
+}
+ul#setptext li{
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:16px;
+display:inline;
+height:30px;
+line-height:30px;
+padding:0;
+padding-left:125px;
+z-index:10px;
+}
+ul#setptext li.fist{
+
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:16px;
+display:inline;
+height:30px;
+line-height:30px;
+padding:0;
+padding-left:65px;
+z-index:10px;
+}
+ul#setptext li.end{
+z-index:10px;
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:16px;
+display:inline;
+height:30px;
+line-height:30px;
+padding:0;
+padding-left:115px;
+
+}
+ul#setptext li a{
+color:#606162;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:16px;
+z-index:10px;
+}
+ul#setptext li a.ac	{
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:16px;
+z-index:10px;
+}
+
+/* # Nhap chung minh thu xac nhan
+---------------------------------------------------------------------------- */
+div#SoCMTNDTile {
+clear:both;
+width:410px;
+height:35px;
+margin:10px 0 0 150px;
+text-align:left;
+background-color:#008e9a;
+line-height:35px;
+color:#FFFFFF;
+padding:0 0 0  20px;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:18px;
+z-index:10;
+}
+div#SoCMTND{
+clear:both;
+min-height:110px;
+width:428px;
+margin:0 0 0 150px;
+text-align:left;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+z-index:10;
+border:#e9e9e8;
+border:solid;
+border-width:1px;
+border-top:none;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius:5px;
+position:relative;
+float:left;
+z-index:10;
+}
+.SoCMTNDtxt {
+
+	background:#c4c4c4;
+	width:340px;
+	height:30px;
+	border:0;
+	vertical-align:top;
+	color:white; 
+	margin:20px 0 0 44px;
+    border-radius:5px;
+	color:#010000;
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+	font-size:14px;
+	text-align:center;
+	vertical-align:middle;
+	letter-spacing:2px;
+ }
+	 
+
+.SoCMTNDBotton {
+
+	background:#f04c23;
+	width:98px;
+	height:30px;
+	border:0;
+	vertical-align:top;
+	color:white; 
+	margin:15px 0 10px 162px;
+    border-radius:5px;
+	color:#FFFFFF;
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+	font-size:14px;
+	text-align:center;
+	vertical-align:middle;
+	z-index:10;	
+	cursor:hand;
+	cursor: pointer;
+ } 
+ p#SoCMTNDThongBao
+ {
+ 	font-family: "UTM Alter Gothic"; /* no .ttf */
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+	color:#008e9a;
+	padding:10px 0 0 0;
+ }
+  p#SoCMTNDThongBaonodung{
+  font-family: "UTM Alter Gothic"; /* no .ttf */
+	font-size:15px;
+	text-align:center;
+	vertical-align:middle;
+	color:#969190;
+	padding:0;
+	z-index:10;
+  }
+  .SoCMTNDErrorBotton {
+	background:#f04c23;
+	width:98px;
+	height:30px;
+	border:0;
+	vertical-align:top;
+	color:white; 
+	margin:0px 0 0 290px;
+    border-radius:5px;
+	color:#FFFFFF;
+	font-family: "UTM Alter Gothic"; /* no .ttf */
+	font-size:14px;
+	text-align:center;
+	vertical-align:middle;
+	
+	cursor:pointer;
+	cursor:hand;
+ } 
+ 
+ /* # Ho so xet tuyen
+---------------------------------------------------------------------------- */
+div#centerHoSo{
+	background:#ffffff;
+	width:780px;
+	position:relative;
+	float:left;
+	margin:0 120px 0 100px;
+	border-radius:10px;
+	min-height:100%;
+	
+}
+div#contentHoSo {
+position:relative;
+float:left;
+background:#e4f2fc;
+width:730px;
+margin:10px 0 0 0;
+padding:0 0 0 0;
+min-height:468px;
+vertical-align:top;
+border-top-left-radius: 5px;
+border-top-right-radius:5px;
+}
+div#HoSoTile
+{
+z-index:10;
+width:510px;
+height:40px;
+background:#f04c23;
+margin:10px 0 0 90px;
+padding:0;
+color:#ffffff;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:20px;
+text-align:center;
+vertical-align:middle;
+line-height:40px;
+}
+div#HoSoHinhThuc
+{
+position:absolute;
+top:5px;
+left:600px;
+z-index:10;
+width:140px;
+height:50px;
+background:#70bf45;
+margin:0;
+padding:0;
+color:#ffffff;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:15px;
+text-align:center;
+vertical-align:middle;
+
+}
+
+
+div#setpHS
+{
+z-index:10;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+clear:both;
+position:relative;
+float:left;
+width:506px;
+padding:10px 0 0 180px;
+margin:0;
+}
+
+
+ul#stepnumHS {
+display:block;
+list-style:none;
+
+}
+
+ul#stepnumHS li {
+
+list-style:none;
+}
+ul#stepnumHS li a {
+	float:left;
+	
+}
+
+a.stepnumchoiceHS {
+	background:url('../images/stepbgn.png') no-repeat;
+	width:25px;
+	height:25px;
+	color:#6a6a6b;
+	font-size:14px;
+	text-align:center;
+	line-height:25px;
+}
+
+a.stepnumchoiceHS:hover {
+     background:url('../images/stepbg.png') no-repeat;
+	 color:#FFFFFF;
+}
+ a.stepnumchoiceHS:active {
+	text-decoration:none;
+	background:url('../images/stepbg.png');
+	color:#FFFFFF;
+}
+
+ a.stepnumchoiceHSac {
+	text-decoration:none;
+	background:url('../images/stepbg.png');
+	color:#FFFFFF;
+	width:25px;
+	height:25px;
+	font-size:14px;
+	line-height:25px;
+	text-align:center;
+}
+div#numHS{
+position:relative;
+float:left;
+width:25px;
+height:25px;
+}
+div#numHSfist{
+position:relative;
+float:left;
+width:25px;
+height:25px;
+margin-left:15px;
+}
+
+div#lineHS{
+	background:url('../images/linestep.png') repeat-x;
+	line-height:5px;
+	position:relative;
+	float:left;	
+	height:5px;
+	width:130px;
+	margin-top:10px;
+	
+}
+div#lineHSac{
+	background:url('../images/bglineHS.png') repeat-x;
+	line-height:5px;
+	position:relative;
+	float:left;	
+	height:5px;
+	width:130px;
+	margin-top:10px;
+	
+}
+ul#setpHStext
+{
+position:relative;
+clear:both;
+float:left;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+display:inline;
+list-style:none;
+width:560px;
+padding:5px 0 0 165px;
+margin:0;
+z-index:10px;
+}
+ul#setpHStext li{
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+display:inline;
+height:30px;
+line-height:30px;
+padding:0;
+z-index:10px;
+padding:0 ;
+padding-left:65px;
+padding-right:60px;
+}
+ul#setpHStext li.fistHS{
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+display:inline;
+height:25px;
+line-height:25px;
+padding:0;
+z-index:10px;
+}
+ul#setpHStext li.endHS{
+z-index:10px;
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+display:inline;
+height:25px;
+line-height:25px;
+padding:0;
+
+}
+ul#setpHStext li a{
+color:#606162;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+z-index:10px;
+}
+ul#setpHStext li a:hover{
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+z-index:10px;
+}
+ul#setpHStext li a.acHS	{
+color:#016739;
+font-family: "UTM Alter Gothic"; /* no .ttf */
+font-size:14px;
+z-index:10px;
+}
+div#ThongTinHS
+{
+background:#e4f2fc;
+position:relative;
+float:left;
+clear:both;
+width:660;
+position:relative;
+float:left;
+padding:0px;
+margin:20px 35px;
+}
+.group { display: table; width:100%; z-index:10; position:relative; float:left; clear:both; }
+.item { display: table-cell; }
+.textline {
+white-space: nowrap; width: 1%; padding: 0 5px;
+color:#f04c23;
+font-family: "MyriadPro-Regular"; /* no .ttf */
+font-size:16px;
+font-weight:900;
+ }
+ .textlineNganh {
+white-space: nowrap; width: 1%; padding: 0 5px;
+color:#1b7b3d; 
+font-family: "MyriadPro-Regular";
+font-size:16px;
+font-weight:900;
+ }
+.line1 { border-bottom: 3px solid #c1c7cb; position: relative; top: -0.5em;  width:50px;}
+.line { border-bottom: 3px solid #c1c7cb; position: relative; top: -0.5em;  width:500px;}
+div#ThongTinHSContent{
+	width:650;
+	background:#e4f2fc;
+	position:relative;
+	float:left;
+	clear:both;
+	color:#000000;
+	font-family:"MyriadPro-Regular"; /* no .ttf */
+	font-size:12px;
+	padding:5px 5px;
+	font-weight:bold;
+	margin:0;
+	
+
+}
+div#HoSoCenter{
+width:650px;
+clear:both;
+position:relative;
+float:left;
+z-index:10;
+padding:0 0 5px 0;
+}
+.Thongtintxt {
+	width:20px;
+	height:15px;
+	vertical-align:middle;
+	color:#000000; 
+	text-align:center;
+	font-size:12px;
+	border:1px solid #c1c7cb;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+	padding:0;
+	margin:0;
+     }
+ #tabbleNoidung
+ {
+	width:620px;
+	border:0;
+	text-align:left;
+	vertical-align:middle;
+	margin-bottom:5px;
+ }
+#tabbleNoidung tr td#col11 {
+	width:210px;
+	vertical-align:middle;
+	text-align:left;
+	
+	
+}
+.error
+{
+	color:Red;
+	text-align:center;
+	padding:5px 5px;
+	margin:10px 0 0 40px;
+	font-size:12px;
+	border:1px solid #c1c7cb;
+	width:545px;
+	
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+}
+.errorCMT
+{
+	color:Red;
+	clear:both;
+	float:left;
+	position:relative;
+	text-align:center;
+	padding:5px 0 0 0;
+	margin:0;
+	font-size:12px;
+	width:100%;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+}
+#tabbleNoidung tr td#col12 {
+	vertical-align:middle;
+	width:90px;
+	text-align:left;
+	padding-left:0;
+	
+}
+
+.des{
+	
+	vertical-align:text-top;
+	text-align:center;
+	color:#5f6060;
+}
+#tabbleNoidung1 tr td#col21
+ {
+	 width:220px;
+	border:0;
+	text-align:center;
+	vertical-align:middle;
+	
+ }
+ #tabbleNoidung1 
+ {
+	vertical-align:middle;
+	text-align:left;
+	width:650px;
+	padding:0;
+	margin:10px 0;
+	
+ }
+td#matruong
+   {
+	width:66px;
+	border:0;
+	text-align:left;
+	vertical-align:middle;
+ }
+ td#matinh
+  {
+	width:44px;
+	border:0;
+	text-align:center;
+	vertical-align:middle;
+ }
+ #tabbleNoidung1 tr td#namhoc
+ {
+	width:80px;
+	border:0;
+	text-align:left;
+	vertical-align:middle;
+ }
+ #tabbleNoidung1 tr td#namhoc1
+ {
+	width:75px;
+	border:0;
+	text-align:left;
+	vertical-align:middle;
+	padding-left:10px;
+ }
+ #tabbleNoidung2 
+ {
+	vertical-align:middle;
+	text-align:left;
+	width:620px;
+	padding:0;
+	margin-top:10px;
+	margin-left:30px;
+	
+ }
+ #tabbleNoidung2 tr td#col21{
+vertical-align:middle;
+text-align:left;
+padding:0;
+ }
+ .BottonTiep
+ {
+	border-size: 0px;
+	border-style: none;
+	float:none;
+	position:relative;
+	color: blue;
+	cursor:hand;
+	cursor: pointer;
+	background:#f04c23;
+	padding:0px;
+	text-align:center;
+	vertical-align:middle;
+	height:30px;
+	width:120px;
+	border-radius:5px;
+	color:#FFFFFF;
+	font-weight:bold;
+	z-index:10;
+ }
+ div#bottonTiep
+ {
+ 	 width:660px;
+	 text-align:center;
+	 height:30px;
+	 margin:20px 0 90px 0;
+	 float:left;
+	 position:relative;
+	 padding:0;
+	 clear:both;
+	 
+ }
+ #tabbbleDiem
+ {
+ 	z-index:10;
+	width:510px;
+	border:0;
+	text-align:center;
+	font-size:12px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	margin:10px 0 0 90px;
+ }
+ #tabbbleDiem tr td#tieude
+ {
+ 	font-size:18px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#5b5b5c;	
+	text-align:left;
+ }
+ #tabbbleDiem tr td#diem
+ {
+	width:170px;
+ 	font-size:18px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#097338;
+	font-weight:bold;	
+	padding:10px 0;
+	text-align:left;
+ }
+ .Mon
+ {
+ 	font-size:18px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#0d783d;	
+	text-align:left;
+	font-weight:900;
+	padding:0;
+	margin:0;
+ }
+.Lop
+ {
+ 	
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	text-align:left;
+	font-weight:900;
+	font-size:15px;
+	padding:0;
+	color:#000000;
+	padding:0 ;
+	margin:0;
+ }
+ .HK
+ {
+ 	
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	text-align:center;
+	font-weight:900;
+	font-size:13px;
+	padding:0;
+	color:#000000;
+	margin:0 15px 0 15px;
+ }
+ .Diemtxt {
+	width:30px;
+	height:15px;
+	vertical-align:middle;
+	color:#000000; 
+	text-align:center;
+	font-size:13px;
+	border:1px solid #c1c7cb;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-weight:800;
+	margin:0 0 0 15px;
+     }
+#mapop
+{
+	width:630px;
+	height:25px;
+	position:relative;
+	clear:both;
+	float:left;
+	text-align:right;
+	vertical-align:middle;
+ 	font-size:18px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#097338;
+	padding:0;
+	margin:0;
+	line-height:25px;
+	z-index:10;
+}
+div#mapop .mapop
+{
+	
+	height:25px;
+	width:150px;
+	vertical-align:middle;
+	color:#FFFFFF; 
+	text-align:center;
+	font-size:14px;
+	border:1px solid #515151;
+	background:#606061;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+	z-index:10;
+}
+div#mapop .textmapop
+{
+	height:25px;
+	width:150px;
+	vertical-align:middle;
+	color:#606061; 
+	text-align:center;
+	font-size:18px;
+	line-height:25px;
+	letter-spacing:5px;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+}
+div#NganhDaoTao
+{
+	width:730px;
+	position:relative;
+	float:left;
+	clear:both;
+	float:left;
+	text-align:center;
+	vertical-align:text-top;
+ 	font-size:18px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#097338;
+	padding:0;
+	margin:0;
+	text-align:left;
+	line-height:18px;
+	border:none;
+	z-index:10;
+	padding-bottom:100px;
+	
+}
+#tabbleNganhDaoTao
+{
+	width:730px;
+	position:relative;
+	float:left;
+	clear:both;
+	text-align:left;
+	vertical-align:top;
+ 	font-size:8px;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#097338;
+	padding:0;
+	margin:0;
+	line-height:17px;
+	background:#e4f2fc;
+	font-weight:800;
+}
+
+div#trfist-child { 
+	background:url("../images/bgnganh.png") ;
+	width:730px;
+	height:85px;
+	background-size:730px 85px;
+	background-repeat:no-repeat;
+	 text-align:center;
+	 vertical-align:top;
+	 position:relative;
+	 float:left;
+	 clear:both;
+
+}
+div#trlast-child { 
+	width:726px;
+	 text-align:left;
+	 vertical-align:top;
+	 position:relative;
+	 float:left;
+	 clear:both;
+	 border:2px solid #1b7b3d;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border-top:none;
+	font-size:13px;
+}
+div#trcenter-child { 
+	width:726px;
+	 text-align:center;
+	 vertical-align:top;
+	 position:relative;
+	 float:left;
+	 clear:both;
+	 border:2px solid #1b7b3d;
+border-top:none;
+border-bottom:none;
+}
+div#tr-child { 
+	width:726px;
+	 text-align:left;
+	 vertical-align:top;
+	 position:relative;
+	 float:left;
+	 clear:both;
+	 line-height:45px;
+	 font-weight:bold;
+	font-size:15px;
+	padding-left:10px;
+}
+div#child { 
+	
+		width:103px;	
+		text-align:center;
+		position:relative;
+		float:left;
+	
+}
+div#child1 { 
+	
+		width:103px;	
+		text-align:left;
+		vertical-align:text-top;
+		position:relative;
+		float:left;
+	
+}
+div#fist-child { 
+	
+	width:108px;	
+	text-align:center;
+ 	position:relative;
+	float:left;
+}
+div#fist-child1 { 
+	
+	width:108px;	
+	text-align:left;
+	vertical-align:text-top;
+ 	position:relative;
+	float:left;
+}
+#tabbleNganhDaoTao .img
+{
+	width:95px;
+	height:85px;
+	border:0;
+	
+}
+div#NganhHSContent{
+	width:730px;
+	background:#e4f2fc;
+	position:relative;
+	float:left;
+	height:100%;
+	clear:both;
+	color:#000000;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+	font-size:12px;
+	padding:5px 0;
+	margin:0;
+
+}
+div#chitietNganh
+{
+	width:445px;
+	clear:both;
+	background:#e4f2fc;
+	position:relative;
+	vertical-align:top;
+	text-align:left;
+	float:left;
+	clear:both;
+	color:#1b7b3d;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:15px;
+	font-weight:900;
+	padding:0;
+	margin:10px 0 0 140px ;
+	height:55px;
+	z-index:10;
+	 border:1px solid #1b7b3d;
+}
+div#chitietNganhlefft
+{
+	height:55px;
+	width:255px;
+	margin:0;
+	padding:0 0 0 25px;
+	position:relative;
+	vertical-align:top;
+	text-align:left;
+	float:left;
+	line-height:55px;
+}
+div#img
+{
+	position:relative;
+	float:left;
+	width:30px;
+	height:30px;
+	border:0;
+	margin:15px 10px 0 0;
+}
+div#NganhTopright{
+	position:relative;
+	float:left;
+	width:165px;
+	height:25px;
+	border:0;
+	margin:0;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#FFFFFF;
+	text-align:center;
+	line-height:25px;
+}
+div#NganhBottonright{
+	position:relative;
+	float:left;
+	width:165px;
+	height:25px;
+	border:0;
+	margin:0;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	color:#FFFFFF;
+	text-align:center;
+	line-height:25px;
+}
+div#chitietNganhright
+{
+	height:55px;
+	width:165px;
+	margin:0;
+	padding:0;
+	background: #1b7b3d;
+	position:relative;
+	vertical-align:top;
+	text-align:left;
+	float:left;
+	
+}
+div#ThongTinHSTHCS
+{
+background:#e4f2fc;
+position:relative;
+height:100%;
+float:left;
+clear:both;
+width:730px;
+padding:0;
+margin:0;
+}
+div#TiteTHPTDiem
+{
+	width:660px;
+	clear:both;
+	background:#e4f2fc;
+	position:relative;
+	vertical-align:top;
+	text-align:center;
+	float:left;
+	color:#5b5b5c;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:14px;
+	font-weight:900;
+	padding:0;
+	margin:0 0 10px 0;
+	z-index:10;
+}
+#tableHSCaNhan{
+	width:640px;
+	background:#FFFFFF;
+	vertical-align:top;
+	text-align:left;
+	color:#000000;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:13px;
+	font-weight:900;
+	padding:0;
+	margin:0 0 0 50px;
+	z-index:10;
+}
+
+#tableHSCaNhan tr td.col1{
+	width:140px;
+	background:#FFFFFF;
+	vertical-align:middle;
+	text-align:left;
+	border:0;
+	color:#000000;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:13px;
+	font-weight:900;
+	padding:5px 0;
+	margin:0 ;
+	height:10px;
+	z-index:10;
+}
+#tableHSCaNhan tr td.col2{
+	width:500px;
+	background:#FFFFFF;
+	border:0;
+	vertical-align:middle;
+	text-align:left;
+	color:#000000;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:13px;
+	font-weight:900;
+	padding:5px 0;
+	margin:0 ;
+	z-index:10;
+	height:10px;
+}
+#CaNhanLine{
+	width:696px;
+	background:#FFFFFF;
+	border:0;
+	vertical-align:middle;
+	position:relative;
+	float:left;
+	text-align:left;
+	color:#000000;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:13px;
+	font-weight:900;
+	clear:both;
+	padding:5px 0;
+	margin:0;
+	height:160px;
+}
+
+#tableHSCaNhan2{
+	width:640px;
+	background:#FFFFFF;
+	vertical-align:text-top;
+	text-align:left;
+	color:#000000;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:13px;
+	font-weight:900;
+	padding:0;
+	margin:0;
+	z-index:10;
+}
+.CaNhantxt {
+	width:248px;
+	height:15px;
+	vertical-align:middle;
+	color:#000000; 
+	text-align:left;
+	font-size:13px;
+	border:1px solid #c1c7cb;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+	padding: 0 5px;
+
+  }
+  .DiaChitxt {
+	width:350px;
+	height:15px;
+	vertical-align:middle;
+	color:#000000; 
+	text-align:left;
+	font-size:13px;
+	border:1px solid #c1c7cb;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+	padding: 0 5px;
+
+  }
+  .NgaySinhtxt {
+	width:65px;
+	height:15px;
+	vertical-align:middle;
+	color:#000000; 
+	text-align:left;
+	font-size:13px;
+	border:1px solid #c1c7cb;
+	font-family: "MyriadPro-Semibold"; /* no .ttf */
+	padding: 0 5px;
+
+  }
+  
+  .TableThongBao
+  {
+  	width:350px;
+	background:#FFFFFF;
+	vertical-align:text-top;
+	text-align:center;
+	color:#000000;
+	font-family: "MyriadPro-Regular"; /* no .ttf */
+	font-size:13px;
+	font-weight:900;
+	padding:0;
+	margin:0;
+	z-index:10;
+  
+  	}

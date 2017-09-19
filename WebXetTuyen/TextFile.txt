@@ -1,0 +1,768 @@
+﻿ <div id="trfist-child">
+									<div id="fist-child"><asp:ImageButton ID="imgbCongNgheTT"  CssClass="img" 
+                                            ToolTip="CÔNG NGHỆ THÔNG TIN"  ImageUrl="images/CNTT.png" runat="server" 
+                                            onclick="imgbCongNgheTT_Click" /></div> 
+									<div id="child"><asp:ImageButton ID="imgbDienTu"  CssClass="img" 
+                                            ToolTip="ĐIỆN - ĐIỆN TỬ"  ImageUrl="images/DIEN.png" runat="server" 
+                                            onclick="imgbDienTu_Click" /></div>
+									<div id="child"><asp:ImageButton ID="imgbVanHoa"  CssClass="img" ToolTip="VĂN HÓA DU LỊCH"  ImageUrl="images/vhdl-04.png" runat="server" /></div>
+									<div id="child"><asp:ImageButton ID="imgbXayDung"  CssClass="img" ToolTip="KT CÔNG TRÌNH XÂY DỰNG"  ImageUrl="images/xaydung.png" runat="server" /></div>
+									<div id="child"><asp:ImageButton ID="imgbMoiTruong"  CssClass="img" ToolTip="KỸ THUẬT MÔI TRƯỜNG"  ImageUrl="images/kythuatmoitruong.png" runat="server" /></div>
+									<div id="child"><asp:ImageButton ID="imgbNgoaiNgu"  CssClass="img" ToolTip="NGÔN NGỮ ANH"  ImageUrl="images/ngonnguanh.png" runat="server" /></div>
+									<div id="child"><asp:ImageButton ID="imgbQuanTri"  CssClass="img" ToolTip="QUẢN TRỊ KINH DOANH"  ImageUrl="images/quantrikinhdoanh.png" runat="server" /></div>
+							 	 </div>
+							  <div id="trcenter-child">
+									<div id="fist-child">CÔNG NGHỆ THÔNG TIN</div>
+									<div id="child">ĐIỆN - ĐIỆN TỬ</div>
+									<div id="child">VĂN HÓA DU LỊCH</div>
+									<div id="child" style="font-size:9px;">KT CÔNG TRÌNH XÂY DỰNG</div>
+									<div id="child">KỸ THUẬT MÔI TRƯỜNG</div>
+									<div id="child">NGÔN NGỮ ANH</div>
+									<div id="child">QUẢN TRỊ KINH DOANH</div>
+							    </div>
+								   <div id="trlast-child">
+									<div id="fist-child1"><asp:CheckBoxList ID="cblCongNghe" runat="server"></asp:CheckBoxList></div>
+									<div id="child1"><asp:CheckBoxList ID="cblDien" runat="server"></asp:CheckBoxList></div>
+									<div id="child1"><asp:CheckBoxList ID="cblVanHoa" runat="server"></asp:CheckBoxList></div>
+									<div id="child1" ><asp:CheckBoxList ID="cblXayDung" runat="server"></asp:CheckBoxList></div>
+									<div id="child1"><asp:CheckBoxList ID="cblMoiTruong" runat="server"></asp:CheckBoxList></div>
+									<div id="child1"><asp:CheckBoxList ID="cblNgoaiNgu" runat="server"></asp:CheckBoxList></div>
+									<div id="child1"><asp:CheckBoxList ID="cblQuanTri" runat="server"></asp:CheckBoxList></div>
+							 	 </div>
+							 	 
+							 	 
+							 	 
+							 	 
+							 	 
+							 	 
+							 	 
+         $("#<%=imgCongNgheTT.ClientID%>").click(function(){
+          
+           var str = "";
+        $('#<%=cblNganhCNTT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+           
+           
+          str = "";
+        $('#<%=cblCNTT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }  
+            
+           $("#<%=pnNganhCNTT.ClientID%>").toggle();
+           $("#<%=pnKhoiCNTT.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhCNTT.ClientID%>").is(":hidden")){
+           $("#<%=pnIconCNTT.ClientID%>").height($("#<%=pnNganhCNTT.ClientID%>").height() - $("#<%=pnNganhCNTT.ClientID%>").height());
+            $("#<%=pnatitleCNTT.ClientID%>").width($("#<%=pnatitleCNTT.ClientID%>").width() + $("#<%=pnKhoiCNTT.ClientID%>").width());
+            $("#<%=pnatitleCNTT.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconCNTT.ClientID%>").height($("#<%=pnatitleCNTT.ClientID%>").height()+ $("#<%=pnNganhCNTT.ClientID%>").height() +22);
+             $("#<%=pnatitleCNTT.ClientID%>").width($("#<%=pnatitleCNTT.ClientID%>").width() - $("#<%=pnKhoiCNTT.ClientID%>").width());
+             $("#<%=pnatitleCNTT.ClientID%>").css({"color":"#e1e31a"});
+             
+                   
+                   
+              
+           }
+          });
+          
+         $("#<%=pnatitleCNTT.ClientID%>").click(function(){
+         
+          var str = "";
+        $('#<%=cblNganhCNTT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+         str = "";
+        $('#<%=cblCNTT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }  
+        
+           $("#<%=pnNganhCNTT.ClientID%>").toggle();
+            $("#<%=pnKhoiCNTT.ClientID%>").toggle();
+         if( $("#<%=pnNganhCNTT.ClientID%>").is(":hidden")){
+           $("#<%=pnIconCNTT.ClientID%>").height($("#<%=pnNganhCNTT.ClientID%>").height() - $("#<%=pnNganhCNTT.ClientID%>").height());
+            $("#<%=pnatitleCNTT.ClientID%>").width($("#<%=pnatitleCNTT.ClientID%>").width() + $("#<%=pnKhoiCNTT.ClientID%>").width());
+            $("#<%=pnatitleCNTT.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconCNTT.ClientID%>").height($("#<%=pnatitleCNTT.ClientID%>").height()+ $("#<%=pnNganhCNTT.ClientID%>").height() +22);
+              $("#<%=pnatitleCNTT.ClientID%>").width($("#<%=pnatitleCNTT.ClientID%>").width() - $("#<%=pnKhoiCNTT.ClientID%>").width());
+               $("#<%=pnatitleCNTT.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+          
+          
+          
+          //Xu ly su  kiên Dien
+          $("#<%=imgDien.ClientID%>").click(function(){
+          
+          var str = "";
+        $('#<%=cblNganhDien.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+         str = "";
+        $('#<%=cblDien.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+           $("#<%=pnNganhDien.ClientID%>").toggle();
+           $("#<%=pnKhoiDien.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhDien.ClientID%>").is(":hidden")){
+           $("#<%=pnIconDien.ClientID%>").height($("#<%=pnNganhDien.ClientID%>").height() - $("#<%=pnNganhDien.ClientID%>").height());
+            $("#<%=pnatitleDien.ClientID%>").width($("#<%=pnatitleDien.ClientID%>").width() + $("#<%=pnKhoiDien.ClientID%>").width());
+            $("#<%=pnatitleDien.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconDien.ClientID%>").height($("#<%=pnatitleDien.ClientID%>").height()+ $("#<%=pnNganhDien.ClientID%>").height() +22);
+             $("#<%=pnatitleDien.ClientID%>").width($("#<%=pnatitleDien.ClientID%>").width() - $("#<%=pnKhoiDien.ClientID%>").width());
+             $("#<%=pnatitleDien.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+         $("#<%=pnatitleDien.ClientID%>").click(function(){
+         
+          var str = "";
+        $('#<%=cblNganhDien.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+        str = "";
+        $('#<%=cblDien.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+           $("#<%=pnNganhDien.ClientID%>").toggle();
+            $("#<%=pnKhoiDien.ClientID%>").toggle();
+         if( $("#<%=pnNganhDien.ClientID%>").is(":hidden")){
+           $("#<%=pnIconDien.ClientID%>").height($("#<%=pnNganhDien.ClientID%>").height() - $("#<%=pnNganhDien.ClientID%>").height());
+            $("#<%=pnatitleDien.ClientID%>").width($("#<%=pnatitleDien.ClientID%>").width() + $("#<%=pnKhoiDien.ClientID%>").width());
+            $("#<%=pnatitleDien.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconDien.ClientID%>").height($("#<%=pnatitleDien.ClientID%>").height()+ $("#<%=pnNganhDien.ClientID%>").height() +22);
+              $("#<%=pnatitleDien.ClientID%>").width($("#<%=pnatitleDien.ClientID%>").width() - $("#<%=pnKhoiDien.ClientID%>").width());
+               $("#<%=pnatitleDien.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+          
+          
+          //Xu ly su  kiên Van hoa
+          $("#<%=imgVH.ClientID%>").click(function(){
+          
+              var str = "";
+        $('#<%=cblNganhVH.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+          str = "";
+        $('#<%=cblVH.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+          
+           $("#<%=pnNganhVH.ClientID%>").toggle();
+           $("#<%=pnKhoiVH.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhVH.ClientID%>").is(":hidden")){
+           $("#<%=pnIconVH.ClientID%>").height($("#<%=pnNganhVH.ClientID%>").height() - $("#<%=pnNganhVH.ClientID%>").height());
+            $("#<%=pnatitleVH.ClientID%>").width($("#<%=pnatitleVH.ClientID%>").width() + $("#<%=pnKhoiVH.ClientID%>").width());
+            $("#<%=pnatitleVH.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconVH.ClientID%>").height($("#<%=pnatitleVH.ClientID%>").height()+ $("#<%=pnNganhVH.ClientID%>").height() +22);
+             $("#<%=pnatitleVH.ClientID%>").width($("#<%=pnatitleVH.ClientID%>").width() - $("#<%=pnKhoiVH.ClientID%>").width());
+             $("#<%=pnatitleVH.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+         $("#<%=pnatitleVH.ClientID%>").click(function(){
+         
+         var str = "";
+        $('#<%=cblNganhVH.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+         
+          str = "";
+        $('#<%=cblVH.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+           $("#<%=pnNganhVH.ClientID%>").toggle();
+            $("#<%=pnKhoiVH.ClientID%>").toggle();
+         if( $("#<%=pnNganhVH.ClientID%>").is(":hidden")){
+           $("#<%=pnIconVH.ClientID%>").height($("#<%=pnNganhVH.ClientID%>").height() - $("#<%=pnNganhVH.ClientID%>").height());
+            $("#<%=pnatitleVH.ClientID%>").width($("#<%=pnatitleVH.ClientID%>").width() + $("#<%=pnKhoiVH.ClientID%>").width());
+            $("#<%=pnatitleVH.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconVH.ClientID%>").height($("#<%=pnatitleVH.ClientID%>").height()+ $("#<%=pnNganhVH.ClientID%>").height() +22);
+              $("#<%=pnatitleVH.ClientID%>").width($("#<%=pnatitleVH.ClientID%>").width() - $("#<%=pnKhoiVH.ClientID%>").width());
+               $("#<%=pnatitleVH.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+          
+          //Xu ly su  kiên Xay dung
+          $("#<%=imgXD.ClientID%>").click(function(){
+          
+          var str = "";
+        $('#<%=cblNganhXD.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+        str = "";
+        $('#<%=cblXD.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+          
+           $("#<%=pnNganhXD.ClientID%>").toggle();
+           $("#<%=pnKhoiXD.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhXD.ClientID%>").is(":hidden")){
+           $("#<%=pnIconXD.ClientID%>").height($("#<%=pnNganhXD.ClientID%>").height() - $("#<%=pnNganhXD.ClientID%>").height());
+            $("#<%=pnatitleXD.ClientID%>").width($("#<%=pnatitleXD.ClientID%>").width() + $("#<%=pnKhoiXD.ClientID%>").width());
+            $("#<%=pnatitleXD.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconXD.ClientID%>").height($("#<%=pnatitleXD.ClientID%>").height()+ $("#<%=pnNganhXD.ClientID%>").height() +22);
+             $("#<%=pnatitleXD.ClientID%>").width($("#<%=pnatitleXD.ClientID%>").width() - $("#<%=pnKhoiXD.ClientID%>").width());
+             $("#<%=pnatitleXD.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+            
+         $("#<%=pnatitleXD.ClientID%>").click(function(){
+        
+        var str = "";
+        $('#<%=cblNganhXD.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+        str = "";
+        $('#<%=cblXD.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+           $("#<%=pnNganhXD.ClientID%>").toggle();
+            $("#<%=pnKhoiXD.ClientID%>").toggle();
+         if( $("#<%=pnNganhXD.ClientID%>").is(":hidden")){
+           $("#<%=pnIconXD.ClientID%>").height($("#<%=pnNganhXD.ClientID%>").height() - $("#<%=pnNganhXD.ClientID%>").height());
+            $("#<%=pnatitleXD.ClientID%>").width($("#<%=pnatitleXD.ClientID%>").width() + $("#<%=pnKhoiXD.ClientID%>").width());
+            $("#<%=pnatitleXD.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconXD.ClientID%>").height($("#<%=pnatitleXD.ClientID%>").height()+ $("#<%=pnNganhXD.ClientID%>").height() +22);
+              $("#<%=pnatitleXD.ClientID%>").width($("#<%=pnatitleXD.ClientID%>").width() - $("#<%=pnKhoiXD.ClientID%>").width());
+               $("#<%=pnatitleXD.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+           //Xu ly su  kiên Moi Truong
+          $("#<%=imgMT.ClientID%>").click(function(){
+          
+          
+             var str = "";
+        $('#<%=cblNganhMT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+        str = "";
+        $('#<%=cblMT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+           $("#<%=pnNganhMT.ClientID%>").toggle();
+           $("#<%=pnKhoiMT.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhMT.ClientID%>").is(":hidden")){
+         
+        
+            
+           $("#<%=pnIconMT.ClientID%>").height($("#<%=pnNganhMT.ClientID%>").height() - $("#<%=pnNganhMT.ClientID%>").height());
+            $("#<%=pnatitleMT.ClientID%>").width($("#<%=pnatitleMT.ClientID%>").width() + $("#<%=pnKhoiMT.ClientID%>").width());
+            $("#<%=pnatitleMT.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconMT.ClientID%>").height($("#<%=pnatitleMT.ClientID%>").height()+ $("#<%=pnNganhMT.ClientID%>").height() +22);
+             $("#<%=pnatitleMT.ClientID%>").width($("#<%=pnatitleMT.ClientID%>").width() - $("#<%=pnKhoiMT.ClientID%>").width());
+             $("#<%=pnatitleMT.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+         $("#<%=pnatitleMT.ClientID%>").click(function(){
+            
+            var str = "";
+        $('#<%=cblNganhMT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+        
+        str = "";
+        $('#<%=cblMT.ClientID%> input[type=checkbox]:checked').each(function() {
+        str = str + " " + $(this).next().text();
+        });
+        if(str!=""){
+        return false;
+        }
+         
+           $("#<%=pnNganhMT.ClientID%>").toggle();
+            $("#<%=pnKhoiMT.ClientID%>").toggle();
+         if( $("#<%=pnNganhMT.ClientID%>").is(":hidden")){
+           $("#<%=pnIconMT.ClientID%>").height($("#<%=pnNganhMT.ClientID%>").height() - $("#<%=pnNganhMT.ClientID%>").height());
+            $("#<%=pnatitleMT.ClientID%>").width($("#<%=pnatitleMT.ClientID%>").width() + $("#<%=pnKhoiMT.ClientID%>").width());
+            $("#<%=pnatitleMT.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconMT.ClientID%>").height($("#<%=pnatitleMT.ClientID%>").height()+ $("#<%=pnNganhMT.ClientID%>").height() +22);
+              $("#<%=pnatitleMT.ClientID%>").width($("#<%=pnatitleMT.ClientID%>").width() - $("#<%=pnKhoiMT.ClientID%>").width());
+               $("#<%=pnatitleMT.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+          
+          //Xu ly su  kiên Ngoai Ngu
+          $("#<%=imgNN.ClientID%>").click(function(){
+          
+          
+          var str = "";
+            $('#<%=cblNganhNN.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+            
+            str = "";
+            $('#<%=cblNN.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+            
+          
+           $("#<%=pnNganhNN.ClientID%>").toggle();
+           $("#<%=pnKhoiNN.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhNN.ClientID%>").is(":hidden")){
+           $("#<%=pnIconNN.ClientID%>").height($("#<%=pnNganhNN.ClientID%>").height() - $("#<%=pnNganhNN.ClientID%>").height());
+            $("#<%=pnatitleNN.ClientID%>").width($("#<%=pnatitleNN.ClientID%>").width() + $("#<%=pnKhoiNN.ClientID%>").width());
+            $("#<%=pnatitleNN.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconNN.ClientID%>").height($("#<%=pnatitleNN.ClientID%>").height()+ $("#<%=pnNganhNN.ClientID%>").height() +22);
+             $("#<%=pnatitleNN.ClientID%>").width($("#<%=pnatitleNN.ClientID%>").width() - $("#<%=pnKhoiNN.ClientID%>").width());
+             $("#<%=pnatitleNN.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+         $("#<%=pnatitleNN.ClientID%>").click(function(){
+         
+         var str = "";
+            $('#<%=cblNganhNN.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+             str = "";
+            $('#<%=cblNN.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+         
+           $("#<%=pnNganhNN.ClientID%>").toggle();
+            $("#<%=pnKhoiNN.ClientID%>").toggle();
+         if( $("#<%=pnNganhNN.ClientID%>").is(":hidden")){
+           $("#<%=pnIconNN.ClientID%>").height($("#<%=pnNganhNN.ClientID%>").height() - $("#<%=pnNganhNN.ClientID%>").height());
+            $("#<%=pnatitleNN.ClientID%>").width($("#<%=pnatitleNN.ClientID%>").width() + $("#<%=pnKhoiNN.ClientID%>").width());
+            $("#<%=pnatitleNN.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconNN.ClientID%>").height($("#<%=pnatitleNN.ClientID%>").height()+ $("#<%=pnNganhNN.ClientID%>").height() +22);
+              $("#<%=pnatitleNN.ClientID%>").width($("#<%=pnatitleNN.ClientID%>").width() - $("#<%=pnKhoiNN.ClientID%>").width());
+               $("#<%=pnatitleNN.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+          
+          //Xu ly su  kiên Quan Tri
+          $("#<%=imgQT.ClientID%>").click(function(){
+          
+          var str = "";
+            $('#<%=cblNganhQT.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+            
+            str = "";
+            $('#<%=cblQT.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+          
+           $("#<%=pnNganhQT.ClientID%>").toggle();
+           $("#<%=pnKhoiQT.ClientID%>").toggle();
+           
+         if( $("#<%=pnNganhQT.ClientID%>").is(":hidden")){
+           $("#<%=pnIconQT.ClientID%>").height($("#<%=pnNganhQT.ClientID%>").height() - $("#<%=pnNganhQT.ClientID%>").height());
+            $("#<%=pnatitleQT.ClientID%>").width($("#<%=pnatitleQT.ClientID%>").width() + $("#<%=pnKhoiQT.ClientID%>").width());
+            $("#<%=pnatitleQT.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconQT.ClientID%>").height($("#<%=pnatitleQT.ClientID%>").height()+ $("#<%=pnNganhQT.ClientID%>").height() +22);
+             $("#<%=pnatitleQT.ClientID%>").width($("#<%=pnatitleQT.ClientID%>").width() - $("#<%=pnKhoiQT.ClientID%>").width());
+             $("#<%=pnatitleQT.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+         $("#<%=pnatitleQT.ClientID%>").click(function(){
+         
+          var str = "";
+            $('#<%=cblNganhQT.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+         
+         str = "";
+            $('#<%=cblQT.ClientID%> input[type=checkbox]:checked').each(function() {
+            str = str + " " + $(this).next().text();
+            });
+            if(str!=""){
+            return false;
+            }
+         
+           $("#<%=pnNganhQT.ClientID%>").toggle();
+            $("#<%=pnKhoiQT.ClientID%>").toggle();
+         if( $("#<%=pnNganhQT.ClientID%>").is(":hidden")){
+           $("#<%=pnIconQT.ClientID%>").height($("#<%=pnNganhQT.ClientID%>").height() - $("#<%=pnNganhQT.ClientID%>").height());
+            $("#<%=pnatitleQT.ClientID%>").width($("#<%=pnatitleQT.ClientID%>").width() + $("#<%=pnKhoiQT.ClientID%>").width());
+            $("#<%=pnatitleQT.ClientID%>").css({"color":"#ffffff"});
+           }else{
+            $("#<%=pnIconQT.ClientID%>").height($("#<%=pnatitleQT.ClientID%>").height()+ $("#<%=pnNganhQT.ClientID%>").height() +22);
+              $("#<%=pnatitleQT.ClientID%>").width($("#<%=pnatitleQT.ClientID%>").width() - $("#<%=pnKhoiQT.ClientID%>").width());
+               $("#<%=pnatitleQT.ClientID%>").css({"color":"#e1e31a"});
+           }
+          });
+          
+           public HoSo()
+        {
+            isChanged = true;
+
+            this.soCMTND = string.Empty;
+            this.hoTen = string.Empty; 
+            this.ngaySinh = DateTime.Now;
+            this.gioiTinh = string.Empty; 
+            this.hoKhau = string.Empty; 
+            this.diaChi = string.Empty; ;
+            this.dienThoai = string.Empty; 
+            this.email = string.Empty; 
+            this.maTinh = string.Empty;
+            this.maHuyen = string.Empty; 
+            this.maDT = string.Empty; 
+            this.lop10 = string.Empty;
+            this.lop10MaHuyen = string.Empty; 
+            this.lop10MaTruong = string.Empty;
+            this.lop11 = string.Empty; 
+            this.lop11MaHuyen = string.Empty;
+            this.lop11MaTruong = string.Empty;
+            this.lop12 = string.Empty;
+            this.lop12MaHuyen = string.Empty;
+            this.lop12MaTruong = string.Empty;
+            this.maKV = string.Empty;
+            this.truongDT = string.Empty;
+            this.khoiDT = string.Empty;
+            this.danToc = string.Empty;
+            this.hanhKiem = string.Empty;
+            this.hocBa = false;
+            this.loaiHocBa = string.Empty;
+            this.giayTotNghiep = false;
+
+            this.nguoiSua = string.Empty;
+            this.soBaoDanh = string.Empty;
+            this.dangXetTuyen = false;
+            this.nguoiNhap = string.Empty;
+            this.nopLePhi = false;
+            this.lienThong = false;
+            this.totNghiep = string.Empty;
+            this.online = false;
+            this.ngaySua = DateTime.Now;
+            this.ngayNhap = DateTime.Now;
+        }
+        
+        
+        
+        
+        
+        <div class="Nganh">
+							    <asp:Panel ID="pnIconCNTTCD" CssClass="Nganhlefft"  runat="server"> 
+                                    <asp:Image ID="imgCongNgheTTCD"  ToolTip="CÔNG NGHỆ THÔNG TIN" CssClass="img"  ImageUrl="images/CNTT.png"  runat="server" /></asp:Panel>
+                                     <asp:Panel ID="pncenterCNTTCD" CssClass="NganhCenter"  runat="server">
+                                          <asp:Panel ID="pnatitleCNTTCD" CssClass="NganhCenterLeft"  runat="server">CÔNG NGHỆ THÔNG TIN
+                                        </asp:Panel>
+                                         <asp:Panel ID="pnKhoiCNTTCD" CssClass="NganhCenterRight"  runat="server"><div class="divider"></div>KHỐI XÉT TUYỂN <br />
+                                             <asp:CheckBoxList ID="cblCNTTCD" RepeatDirection="Horizontal"  CssClass="cblKhoi" RepeatLayout="Table" runat="server"> 
+                                             </asp:CheckBoxList>
+                                        </asp:Panel>
+							               <asp:Panel ID="pnNganhCNTTCD" CssClass="NganhCenterBotton"  runat="server"><asp:CheckBoxList ID="cblNganhCNTTCD"  CssClass="cblNganh"
+                            RepeatColumns="2" RepeatLayout="Table" runat="server"> </asp:CheckBoxList>
+                                        </asp:Panel>
+                                    </asp:Panel>
+							    
+							</div>
+							<div class="Nganh">
+							    <asp:Panel ID="pnIconDienCD" CssClass="Nganhlefft"  runat="server"> 
+                                    <asp:Image ID="imgDienCD"  ToolTip="ĐIỆN - ĐIỆN TỬ" CssClass="img"  ImageUrl="images/DIEN.png" runat="server" /></asp:Panel>
+                                     <asp:Panel ID="pncenterDienCD" CssClass="NganhCenter"  runat="server">
+                                          <asp:Panel ID="pnatitleDienCD" CssClass="NganhCenterLeft"  runat="server">ĐIỆN - ĐIỆN TỬ
+                                        </asp:Panel>
+                                         <asp:Panel ID="pnKhoiDienCD" CssClass="NganhCenterRight"  runat="server"><div class="divider"></div>KHỐI XÉT TUYỂN <br />
+                                             <asp:CheckBoxList ID="cblDienCD" RepeatDirection="Horizontal"  CssClass="cblKhoi" RepeatLayout="Table" runat="server"> 
+                                             </asp:CheckBoxList>
+                                        </asp:Panel>
+							               <asp:Panel ID="pnNganhDienCD" CssClass="NganhCenterBotton"  runat="server"><asp:CheckBoxList ID="cblNganhDienCD"  CssClass="cblNganh"
+                            RepeatColumns="2" RepeatLayout="Table" runat="server"> </asp:CheckBoxList>
+                                        </asp:Panel>
+                                    </asp:Panel>
+							    
+							</div>
+							
+							<div class="Nganh">
+							    <asp:Panel ID="pnIconVHCD" CssClass="Nganhlefft"  runat="server"> 
+                                    <asp:Image ID="imgVHCD"  ToolTip="VĂN HÓA DU LỊCH" CssClass="img"  ImageUrl="images/vhdl-04.png" runat="server" /></asp:Panel>
+                                     <asp:Panel ID="pncenterVHCD" CssClass="NganhCenter"  runat="server">
+                                          <asp:Panel ID="pnatitleVHCD" CssClass="NganhCenterLeft"  runat="server">VĂN HÓA DU LỊCH
+                                        </asp:Panel>
+                                         <asp:Panel ID="pnKhoiVHCD" CssClass="NganhCenterRight"  runat="server"><div class="divider"></div>KHỐI XÉT TUYỂN <br />
+                                             <asp:CheckBoxList ID="cblVHCD" RepeatDirection="Horizontal"  CssClass="cblKhoi" RepeatLayout="Table" runat="server"> 
+                                             </asp:CheckBoxList>
+                                        </asp:Panel>
+							               <asp:Panel ID="pnNganhVHCD" CssClass="NganhCenterBotton"  runat="server"><asp:CheckBoxList ID="cblNganhVHCD"  CssClass="cblNganh"
+                            RepeatColumns="2" RepeatLayout="Table" runat="server"> </asp:CheckBoxList>
+                                        </asp:Panel>
+                                    </asp:Panel>
+							    
+							</div>
+							
+							<div class="Nganh">
+							    <asp:Panel ID="pnIconXDCD" CssClass="Nganhlefft"  runat="server"> 
+                                    <asp:Image ID="imgXDCD"  ToolTip="KT CÔNG TRÌNH XÂY DỰNG" CssClass="img"  ImageUrl="images/xaydung.png" runat="server" /></asp:Panel>
+                                     <asp:Panel ID="pncenterXD" CssClass="NganhCenter"  runat="server">
+                                          <asp:Panel ID="pnatitleXDCD" CssClass="NganhCenterLeft"  runat="server">KỸ THUẬT CÔNG TRÌNH XÂY DỰNG
+                                        </asp:Panel>
+                                         <asp:Panel ID="pnKhoiXDCD" CssClass="NganhCenterRight"  runat="server"><div class="divider"></div>KHỐI XÉT TUYỂN <br />
+                                             <asp:CheckBoxList ID="cblXDCD" RepeatDirection="Horizontal"  CssClass="cblKhoi" RepeatLayout="Table" runat="server"> 
+                                             </asp:CheckBoxList>
+                                        </asp:Panel>
+							               <asp:Panel ID="pnNganhXDCD" CssClass="NganhCenterBotton"  runat="server"><asp:CheckBoxList ID="cblNganhXDCD"  CssClass="cblNganh"
+                            RepeatColumns="2" RepeatLayout="Table" runat="server"> </asp:CheckBoxList>
+                                        </asp:Panel>
+                                    </asp:Panel>
+							    
+							</div>
+							
+							
+							<div class="Nganh">
+							    <asp:Panel ID="pnIconQTCD" CssClass="Nganhlefft"  runat="server"> 
+                                    <asp:Image ID="imgQTCD"  ToolTip="QUẢN TRỊ KINH DOANH" CssClass="img"  ImageUrl="images/quantrikinhdoanh.png" runat="server" /></asp:Panel>
+                                     <asp:Panel ID="pncenterQTCD" CssClass="NganhCenter"  runat="server">
+                                          <asp:Panel ID="pnatitleQTCD" CssClass="NganhCenterLeft"  runat="server">QUẢN TRỊ KINH DOANH
+                                        </asp:Panel>
+                                         <asp:Panel ID="pnKhoiQTCD" CssClass="NganhCenterRight"  runat="server"><div class="divider"></div>KHỐI XÉT TUYỂN <br />
+                                             <asp:CheckBoxList ID="cblQTCD" RepeatDirection="Horizontal"  CssClass="cblKhoi" RepeatLayout="Table" runat="server"> 
+                                             </asp:CheckBoxList>
+                                        </asp:Panel>
+							               <asp:Panel ID="pnNganhQTCD" CssClass="NganhCenterBotton"  runat="server"><asp:CheckBoxList ID="cblNganhQTCD"  CssClass="cblNganh"
+                            RepeatColumns="2" RepeatLayout="Table" runat="server"> </asp:CheckBoxList>
+                                        </asp:Panel>
+                                    </asp:Panel>
+							    
+							</div>
+							    
+							    Toán &nbsp <input class="Diemtxt" type="text" maxlength="4"/></td><td id="diem" >Lý &nbsp <input class="Diemtxt" type="text" maxlength="4"/> </td><td id="diem" >Hóa &nbsp <input class="Diemtxt" type="text" maxlength="4"/>
+							    
+							    
+							    <input class="mapop" type="text"  maxlength="10"/>&nbsp <label class="textmapop">86edf</label> 
+							    
+							    
+							    Table   tbct1 = (Table)c2;
+                                             foreach (TableRow trct1 in tbct1.Rows)
+                                             {
+                                                 foreach (TableCell tcct1 in tr.Cells)
+                                                 {
+                                                     foreach (Control c2 in tcct.Controls)
+                                                     {
+                                                         Response.Write(c2.GetType().ToString());
+                                                     }
+                                                 }
+                                             }
+                                             
+                                             
+                                             
+                                             <ul id="Dot">
+				  <% for (int i = 0; i < dtDiem.Rows.Count; i++)
+                 { %>
+                    <li class="Dot">Môn: <%=dtDiem.Rows[i]["MaMon"].ToString()%> - Điểm: <%=dtDiem.Rows[i]["Diem"].ToString()%> </li>
+                    <%} %>
+                </ul>
+                
+                
+                
+                
+                
+                
+                <%  int j = 0; 
+                        for (int i = 0; i < dtDiem.Rows.Count; i++)
+                 {
+                     if (j == 6) j = 0; 
+                     if (j == 0)
+                     {
+                         string sname = dtDiem.Rows[i]["MaMon"].ToString();
+                         sname = sname.Substring(0, sname.IndexOf(" "));
+                        
+              %>
+              
+                Môn: <%=sname%>
+                <table>
+                        <tr><td></td><td>Học kỳ I</td><td>Học kỳ I</td></tr>
+                        <tr><td>Lớp 10</td><td><%=dtDiem.Rows[i]["Diem"].ToString()%></td>
+                      
+                        
+                 
+              <% }
+                     if (j == 1)
+                     {
+             %>
+             <td><%=dtDiem.Rows[i]["Diem"].ToString()%></td>
+                        </tr>
+                        <%}
+                     if (j == 2)
+                     {
+              %>
+              <tr><td>Lớp 11</td><td><%=dtDiem.Rows[i]["Diem"].ToString()%></td>
+              <%} if (j == 3)
+                     { %>
+                      <td><%=dtDiem.Rows[i]["Diem"].ToString()%></td>
+                        </tr>
+              <%} if (j == 4)
+                     {%>
+                      <tr><td>Lớp 12</td><td><%=dtDiem.Rows[i]["Diem"].ToString()%></td>
+              <%} if (j == 5)
+                     {
+                    %>
+                      <td><%=dtDiem.Rows[i]["Diem"].ToString()%></td>
+                        </tr>
+                        </table>
+              <% 
+                     }%>
+                    <% 
+                        j = j + 1;
+                 } Response.Write(j); %>
+                
+                
+                
+                
+                BEGIN TRANSACTION
+
+ -- retry old mails that failed
+UPDATE MailQueue
+SET ThreadLock = NULL
+WHERE ThreadLock IS NOT NULL
+AND DateProcessed < DATEADD( minute, 15, GETDATE() )
+AND Status != 'Sent'
+
+ -- select mails to send
+SELECT TOP 10 *
+INTO #tmpRows
+FROM MailQueue
+WHERE ThreadLock IS NULL
+AND DateToProcess > GETDATE()
+AND AttemptsRemaining > 0
+ORDER BY Priority DESC
+
+ -- update to lock them
+UPDATE MailQueue
+SET ThreadLock = '<MY GUID>',
+DateProcessed = GETDATE()
+FROM #tmpRows r
+WHERE r.ID = MailQueue.ID
+AND ThreadLock IS NULL
+AND DateToProcess > GETDATE()
+AND AttemptsRemaining > 0
+COMMIT TRANSACTION
+
+ -- select rows
+SELECT *
+FROM MailQueue
+WHERE ThreadLock = '<MY GUID>'
+
+
+
+-- success
+UPDATE MailQueue
+SET ThreadLock = NULL,
+DateProcessed = GETDATE(),
+Status = 'Sent'
+WHERE ID = 10001<BR>
+  -- failure
+UPDATE MailQueue
+SET ThreadLock = NULL,
+DateProcessed = GETDATE(),
+Status = 'Cannot access CDO.Message object'
+AttemptsRemaining = AttemptsRemaining - 1
+WHERE ID = 10002
